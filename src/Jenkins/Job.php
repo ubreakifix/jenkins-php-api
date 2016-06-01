@@ -29,6 +29,14 @@ class Job
     }
 
     /**
+     * @return \stdClass
+     */
+    public function getBaseJob()
+    {
+        return $this->job;
+    }
+
+    /**
      * @return Build[]
      */
     public function getBuilds()
