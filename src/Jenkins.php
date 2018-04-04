@@ -608,6 +608,7 @@ class Jenkins
 
         $this->validateCurl($curl, sprintf('Error during getting configuration for job %s', $jobname));
 
+        $ret = str_replace("<?xml version='1.1'", "<?xml version='1.0'", $ret);
         return $ret;
     }
 
